@@ -1,0 +1,29 @@
+﻿<Window x:Class="_22_106_Ochapova_MoneyInPocket.Pages.UserPage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_22_106_Ochapova_MoneyInPocket.Pages"
+        mc:Ignorable="d"
+        Title="UserPage" Height="450" Width="800">
+    <Grid  Background="#ffffff">
+        <Grid Grid.Row="0" Background="#ffc000" Margin="0,20,0,389.6">
+            <TextBlock x:Name="tbl_fio" HorizontalAlignment="Left" Margin="35,0,0,0" TextWrapping="Wrap" Text="ФИО" VerticalAlignment="Center" FontSize="20" FontWeight="Bold"/>
+        </Grid>
+        <TextBlock HorizontalAlignment="Left" Margin="26,85,0,0" TextWrapping="Wrap" Text="Адресс:" VerticalAlignment="Top" FontSize="18"/>
+        <TextBlock x:Name="tbAdress" HorizontalAlignment="Left" Margin="170,85,0,0" TextWrapping="Wrap" Text="ВашАдресс" VerticalAlignment="Top" FontSize="18"/>
+        <TextBlock HorizontalAlignment="Left" Margin="26,120,0,0" TextWrapping="Wrap" Text="Телефон:" VerticalAlignment="Top" FontSize="18"/>
+        <TextBlock x:Name="tbPhone" HorizontalAlignment="Left" Margin="170,120,0,0" TextWrapping="Wrap" Text="ВашТелефон" VerticalAlignment="Top" FontSize="18"/>
+        <TextBlock HorizontalAlignment="Left" Margin="26,155,0,0" TextWrapping="Wrap" Text="Эл.Почта:" VerticalAlignment="Top" FontSize="18"/>
+        <TextBlock x:Name="tbEmail" HorizontalAlignment="Left" Margin="170,155,0,0" TextWrapping="Wrap" Text="ВашаПочта" VerticalAlignment="Top" FontSize="18"/>
+        <TextBlock HorizontalAlignment="Left" Margin="26,190,0,0" TextWrapping="Wrap" Text="Дата Рождения:" VerticalAlignment="Top" FontSize="18"/>
+        <TextBlock x:Name="tbBirth" HorizontalAlignment="Left" Margin="170,190,0,0" TextWrapping="Wrap" Text="Ваша Дата" VerticalAlignment="Top" FontSize="18"/>
+        <TextBlock HorizontalAlignment="Left" Margin="26,225,0,0" TextWrapping="Wrap" Text="МестоРожденья:" VerticalAlignment="Top" FontSize="18"/>
+        <TextBlock x:Name="tbBirthPlace" HorizontalAlignment="Left" Margin="170,225,0,0" TextWrapping="Wrap" Text="Ваше место" VerticalAlignment="Top" FontSize="18"/>
+        <Grid Grid.Row="0" Background="#5b9bd5" Margin="10,305,10,10">
+            <TextBlock HorizontalAlignment="Left" Margin="10,15
+                       ,0,0" TextWrapping="Wrap" Text="История" VerticalAlignment="Top" FontSize="15" FontWeight="Bold"/>
+            <TextBlock HorizontalAlignment="Left" Margin="181,25,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
+        </Grid>
+    </Grid>
+</Window>

@@ -1,0 +1,29 @@
+﻿<Window x:Class="_22_106_Ochapova_MoneyInPocket.Pages.Authoriz"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_22_106_Ochapova_MoneyInPocket.Pages"
+        mc:Ignorable="d"
+        Title="Authoriz" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="260"/>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="260"/>
+        </Grid.ColumnDefinitions>
+
+        <StackPanel Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Top" Width="260" Height="359" Margin="0,65,0,0">
+            <TextBlock Text="Авторизация" FontSize="20" Width="126" HorizontalAlignment="Center"/>
+            <TextBlock Text="Логин" FontSize="16"/>
+            <TextBox x:Name="tbLogin" Height="24" BorderThickness="0,0,0,2" BorderBrush="Black" VerticalContentAlignment="Bottom"/>
+            <TextBlock Text="Пароль" FontSize="16" />
+            <PasswordBox x:Name="PassBox" Height="26" BorderThickness="0,0,0,2" BorderBrush="Black"/>
+            <TextBlock Visibility="Hidden" x:Name="txtBlockCaptcha" Text="Capcha:"/>
+            <TextBox Visibility="Hidden" x:Name="txtBoxCapcha"/>
+            <Label x:Name="lblTime" Content="время" Visibility="Hidden"/>
+            <Button x:Name="btnEnter" Content="Вход" Width="257" Height="43" Click="btnEnter_Click" />
+            <TextBlock HorizontalAlignment="Center" Visibility="Hidden" x:Name="txtBlockTimer"/>
+        </StackPanel>
+    </Grid>
+</Window>
